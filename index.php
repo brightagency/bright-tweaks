@@ -4,7 +4,7 @@
 Plugin Name: Forge Tweaks
 Description: Our lovingly-made WP Customisation Plugin.
 Author: Forge Collective
-Version: 1.0
+Version: 1.0.1
 Author URI: http://frge.co
 Network: True
 */
