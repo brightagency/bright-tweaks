@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+body {
+  background-image: url(../images/bg.svg) !important;
+  background-size: cover !important;
+  background-position: cover !important; }
+
+body.login {
+  background: #000;
+  font-family: 'Lato';
+  -webkit-font-smoothing: antialiased; }
+
+.login h1 a {
+  background-image: url(../images/forge.png);
+  background-size: 100%;
+  width: 160px;
+  height: 119px;
+  margin-bottom: 24px; }
+
+.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
+  color: #fff; }
+
+.login form {
+  background: #111; }
+
+.login form .input, .login form input[type=checkbox], .login input[type=text] {
+  background: #222;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Lato';
+  font-weight: 400; }
+
+.login #nav a {
+  color: white; }
+
+.login #backtoblog a {
+  color: white; }
