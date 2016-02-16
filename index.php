@@ -1,8 +1,8 @@
 <?php
 
 /*
-Plugin Name: Forge WP
-Description: Our lovingly-made WP installation.
+Plugin Name: Forge Customisations
+Description: Our lovingly-made WP Customisation Plugin.
 Author: Forge Collective
 Version: 1.0
 Author URI: http://frge.co
