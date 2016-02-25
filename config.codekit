@@ -48,7 +48,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -91,7 +91,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "Forge WP",
+	"displayValue": "Forge Tweaks Plugin",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ariel"
 	},
