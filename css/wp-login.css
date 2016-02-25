@@ -2,22 +2,52 @@
 body {
   background-image: url(../images/bg.svg) !important;
   background-size: cover !important;
-  background-position: cover !important; }
+  background-position: center !important; }
 
 body.login {
   background: #000;
   font-family: 'Lato';
   -webkit-font-smoothing: antialiased; }
 
+body.login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#login {
+  background-color: #111;
+  padding: 48px 24px 24px;
+  border-radius: 4px 50px 4px 4px;
+  box-shadow: 0 2px 5px rgba(17, 17, 17, 0.5); }
+
+#loginform {
+  padding: 1px; }
+  #loginform form input {
+    padding: 10px; }
+
 .login h1 a {
   background-image: url(../images/forge.png);
-  background-size: 100%;
+  background-size: 75%;
   width: 160px;
-  height: 119px;
+  height: 100px;
   margin-bottom: 24px; }
 
-.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
-  color: #fff; }
+p.message {
+  background-color: rgba(89, 215, 191, 0.2) !important;
+  border-left-color: #59d7bf !important;
+  color: white !important; }
+
+#nav, #backtoblog {
+  padding: 0 !important; }
+  #nav a, #backtoblog a {
+    color: #777777 !important; }
+    #nav a:hover, #backtoblog a:hover {
+      color: #59d7bf !important; }
 
 .login form {
   background: #111; }
@@ -35,3 +65,21 @@ body.login {
 
 .login #backtoblog a {
   color: white; }
+
+#wp-submit {
+  background-color: #59d7bf;
+  border: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none;
+  font-family: 'Lato';
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 2px; }
+  #wp-submit:hover {
+    background-color: #31ccae; }
+  #wp-submit:active {
+    background-color: #2cb79d;
+    margin-top: 0;
+    -webkit-transform: none;
+            transform: none; }
