@@ -17,7 +17,7 @@ Network: True
 function forge_dashboard_footer()
 {
 	if ( is_admin() ) {
-		wp_enqueue_style( 'dashboard', plugin_dir_url( __FILE__ ) . 'css/dashboard.css', array(), '1.0' );
+		wp_enqueue_style( 'dashboard-css', plugin_dir_url( __FILE__ ) . 'css/dashboard.css' );
 		wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 	}
 	echo 'Made with <i class="fa fa-heart"></i> by <a href="http://weareforge.co" target="_blank">Forge</a>.';
