@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# CD Into current dir
+cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Zip up files
+zip forge-tweaks.zip *
