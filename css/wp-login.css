@@ -3,19 +3,14 @@ body {
   background-image: url(../images/bg.svg) !important;
   background-size: cover !important;
   background-position: center !important; }
-
-body.login {
-  background: #000;
-  font-family: 'Lato';
-  -webkit-font-smoothing: antialiased; }
-
-body.login {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  body .login {
+    background: #000;
+    font-family: 'Lato';
+    -webkit-font-smoothing: antialiased;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
 
 #login {
   background-color: #111;
@@ -79,5 +74,4 @@ p.message {
   #wp-submit:active {
     background-color: #2cb79d;
     margin-top: 0;
-    -webkit-transform: none;
-            transform: none; }
+    transform: none; }

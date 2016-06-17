@@ -1,24 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
-
-$pink: rgb(255, 48, 80);
-$teal: rgb(89, 215, 191);
-$text: rgb(119, 119, 119);
+@import "vars";
 
 body {
 	background-image: url(../images/bg.svg) !important;
 	background-size: cover !important;
 	background-position: center !important;
-}
 
-body.login {
-	background: #000;
-	font-family: 'Lato';
-	-webkit-font-smoothing: antialiased;
-}
-
-body.login {
-	display: flex;
-	align-items: center;
+	.login {
+		background: #000;
+		font-family: 'Lato';
+		-webkit-font-smoothing: antialiased;
+		display: flex;
+		align-items: center;
+	}
 }
 
 #login {
@@ -50,11 +44,6 @@ p.message {
 	background-color: rgba($teal,.2) !important;
 	border-left-color: $teal !important;
 	color: white !important;
-}
-
-.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
-	// color: #fff;
-	// color: $teal !important;
 }
 
 #nav, #backtoblog {
