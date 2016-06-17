@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Forge Tweaks
  * Plugin URI:        https://bitbucket.org/forgecollective/forge-tweaks
- * Description:       Our lovingly-made WP Customisation Plugin.
+ * Description:       The WordPress customisation plugin of Forge Collective. Now completely re-written.
  * Version:           2.0.0
  * Author:            Forge Collective
  * Author URI:        http://frge.co
