@@ -10,6 +10,9 @@ body {
 		background: #000;
 		font-family: 'Lato';
 		-webkit-font-smoothing: antialiased;
+	}
+
+	&.login {
 		display: flex;
 		align-items: center;
 	}
@@ -24,12 +27,12 @@ body {
 }
 
 #loginform {
-	padding: 1px;
-	form {
-		input {
-			padding: 10px;
-		}
-	}
+	// padding: 24px;
+	// form {
+	// 	input {
+	// 		padding: 10px;
+	// 	}
+	// }
 }
 
 .login h1 a {
@@ -38,16 +41,19 @@ body {
 	width: 160px;
 	height: 100px;
 	margin-bottom: 24px;
+	// margin-top: 24px;
 }
 
 p.message {
+	// padding: 24px;
+
 	background-color: rgba($teal,.2) !important;
 	border-left-color: $teal !important;
 	color: white !important;
 }
 
 #nav, #backtoblog {
-	padding: 0 !important;
+	// padding: 0 !important;
 	a {
 		color: $text !important;
 		&:hover {
@@ -58,6 +64,7 @@ p.message {
 
 .login form {
 	background: #111;
+	padding-top: 0;
 }
 
 .login form .input, .login form input[type=checkbox], .login input[type=text] {

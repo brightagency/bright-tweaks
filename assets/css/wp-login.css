@@ -6,7 +6,8 @@ body {
   body .login {
     background: #000;
     font-family: 'Lato';
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; }
+  body.login {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -17,11 +18,6 @@ body {
   padding: 48px 24px 24px;
   border-radius: 4px 50px 4px 4px;
   box-shadow: 0 2px 5px rgba(17, 17, 17, 0.5); }
-
-#loginform {
-  padding: 1px; }
-  #loginform form input {
-    padding: 10px; }
 
 .login h1 a {
   background-image: url(../images/forge.png);
@@ -35,15 +31,14 @@ p.message {
   border-left-color: #59d7bf !important;
   color: white !important; }
 
-#nav, #backtoblog {
-  padding: 0 !important; }
-  #nav a, #backtoblog a {
-    color: #777777 !important; }
-    #nav a:hover, #backtoblog a:hover {
-      color: #59d7bf !important; }
+#nav a, #backtoblog a {
+  color: #777777 !important; }
+  #nav a:hover, #backtoblog a:hover {
+    color: #59d7bf !important; }
 
 .login form {
-  background: #111; }
+  background: #111;
+  padding-top: 0; }
 
 .login form .input, .login form input[type=checkbox], .login input[type=text] {
   background: #222;
