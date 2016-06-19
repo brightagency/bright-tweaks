@@ -52,6 +52,7 @@ class Forge_Tweaks {
         {
 
         	if ( is_admin() ) {
+                wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/92d1da124e.js', null, null, null );
         		wp_enqueue_style( 'dashboard-css', plugin_dir_url( __FILE__ ) . '../assets/css/dashboard.css' );
         	}
         	echo 'Made with <i class="fa fa-heart"></i> by <a href="http://weareforge.co" target="_blank">Forge</a>.';
