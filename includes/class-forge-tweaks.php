@@ -32,7 +32,7 @@ class Forge_Tweaks {
     public function __construct() {
 
         $this->plugin_name = "Forge Tweaks";
-        $this->version = "2.0.0";
+        $this->version = "2.1.0";
 
         $this->define_admin_hooks();
         $this->define_public_hooks();
