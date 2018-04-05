@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              https://bitbucket.org/forgecollective/forge-tweaks
- * @since             2.0.0
+ * @since             2.1.0
  * @package           Forge_Tweaks
  *
  * @wordpress-plugin

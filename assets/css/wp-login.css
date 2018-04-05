@@ -22,8 +22,8 @@ body {
 .login h1 a {
   background-image: url(../images/forge.png);
   background-size: 75%;
-  width: 160px;
-  height: 100px;
+  width: 200px;
+  height: 70px;
   margin-bottom: 24px; }
 
 p.message {
