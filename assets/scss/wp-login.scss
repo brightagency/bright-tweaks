@@ -1,14 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Lato);
-@import "vars";
+// sass-lint:disable no-important no-ids
+
+@import 'vars';
 
 body {
-	background-image: url(../images/bg.svg) !important;
-	background-size: cover !important;
+	background-image: url('../images/login-bg.png') !important;
 	background-position: center !important;
+	background-size: cover !important;
 
 	.login {
-		background: #000;
-		font-family: 'Lato';
+		background: $white !important;
 		-webkit-font-smoothing: antialiased;
 	}
 
@@ -19,88 +19,79 @@ body {
 }
 
 #login {
-	background-color: #111;
 	padding: 48px 24px 24px;
-	border-radius: 4px 50px 4px 4px;
+	border-radius: 12px;
+	background-color: $white;
 	box-shadow: 0 2px 5px rgba(#111,.5);
-
 }
 
 #loginform {
-	// padding: 24px;
-	// form {
-	// 	input {
-	// 		padding: 10px;
-	// 	}
-	// }
+	padding: 24px;
+	form {
+		input {
+			padding: 10px;
+		}
+	}
 }
 
 .login h1 a {
-	background-image: url(../images/forge.png);
-	background-size: 75%;
-	width: 200px;
-	height: 70px;
+	width: 225px;
+	height: 50px;
 	margin-bottom: 24px;
-	// margin-top: 24px;
+	background-image: url('../images/logo.svg');
+	background-position: center;
+	background-size: contain;
 }
 
 p.message {
-	// padding: 24px;
-
-	background-color: rgba($teal,.2) !important;
-	border-left-color: $teal !important;
-	color: white !important;
+	border-left-color: $purple !important;
+	background-color: rgba($purple, .2) !important;
+	color: $purple !important;
 }
 
-#nav, #backtoblog {
-	// padding: 0 !important;
+#nav,
+#backtoblog {
 	a {
-		color: $text !important;
+		color: $purple !important;
 		&:hover {
-			color: $teal !important;
+			color: $pink !important;
 		}
 	}
 }
 
 .login form {
-	background: #111;
 	padding-top: 0;
+	background: $white;
+	box-shadow: none !important;
 }
 
-.login form .input, .login form input[type=checkbox], .login input[type=text] {
-	background: #222;
-	border: none;
-	color: #fff;
+.login form .input,
+.login form input[type='checkbox'],
+.login input[type='text'] {
+	border: 0;
+	background: hsl(0, 0, 95%);
+	color: hsl(0, 0, 10%);
 	font-size: 24px;
-	font-family: 'Lato';
-	font-weight: 400;
-}
-
-.login #nav a {
-	color: white;
-}
-
-.login #backtoblog a {
-	color: white;
+	font-weight: 500;
 }
 
 #wp-submit {
-	background-color: $teal;
-	border: 0 !important;
-	box-shadow: none !important;
-	text-shadow: none;
-	font-family: 'Lato';
-	font-weight: bold;
-	padding-left: 20px;
 	padding-right: 20px;
+	padding-left: 20px;
+	border: 0 !important;
 	border-radius: 2px;
+	background-color: $purple;
+	font-weight: bold;
+	text-shadow: none;
+	box-shadow: none !important;
 
 	&:hover {
-		background-color: darken($teal,10%);
+		background-color: lighten($purple, 5%);
 	}
+
 	&:active {
-		background-color: darken($teal,15%);
 		margin-top: 0;
 		transform: none;
+		background-color: lighten($purple, 5%);
 	}
 }

@@ -1,24 +1,12 @@
 <?php
 
 /**
- * The plugin bootstrap file
- *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
- * @link              https://bitbucket.org/forgecollective/forge-tweaks
- * @since             2.1.0
- * @package           Forge_Tweaks
- *
- * @wordpress-plugin
- * Plugin Name:       Forge Tweaks
+ * Plugin Name:       Bright Tweaks
  * Plugin URI:        https://bitbucket.org/forgecollective/forge-tweaks
- * Description:       The WordPress customisation plugin of Forge Collective. Now completely re-written.
- * Version:           2.1.0
- * Author:            Forge Collective
- * Author URI:        http://frge.co
+ * Description:       A WordPress customisation plugin by Bright Agency
+ * Version:           1.0.0
+ * Author:            Bright Agency
+ * Author URI:        https://brightagency.com.au
  */
 
 // If this file is called directly, abort.
@@ -26,25 +14,20 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-/**
- * The core plugin class that is used to define internationalization,
- * admin-specific hooks, and public-facing site hooks.
- */
-require plugin_dir_path( __FILE__ ) . 'includes/class-forge-tweaks.php';
+function change_dashboard_footer_text() {
+	
+	if ( is_admin() ) {
+		wp_enqueue_style( 'dashboard-css', plugin_dir_url( __FILE__ ) . './assets/css/dashboard.css' );
+	}
 
-/**
- * Begins execution of the plugin.
- *
- * Since everything within the plugin is registered via hooks,
- * then kicking off the plugin from this point in the file does
- * not affect the page life cycle.
- *
- * @since    2.0.0
- */
-function run_forge_tweaks() {
-
-	$forge_tweaks = new Forge_Tweaks();
-	$forge_tweaks->run();
+	echo 'Made with <span class="heart">♥</span> by <a href="https://brightagency.com.au" target="_blank">Bright Agency</a>.';
 
 }
-run_forge_tweaks();
+
+add_filter('admin_footer_text', 'change_dashboard_footer_text');
+
+function insert_login_css() {
+	echo '<link rel="stylesheet" type="text/css" href="' . plugin_dir_url( __FILE__ ) . './assets/css/wp-login.css">';
+}
+ 
+add_action('login_head', 'insert_login_css');

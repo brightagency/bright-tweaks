@@ -1,5 +1,15 @@
-@import "vars";
+@import 'vars';
 
 #wpfooter {
-	a, i { color: $pink !important; }
+
+	color: $purple;
+
+	.heart {
+		color: $pink;
+	}
+
+	a { 
+		color: $pink; 
+		text-decoration: none;
+	}
 }

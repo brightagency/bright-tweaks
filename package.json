@@ -1,23 +1,28 @@
 {
-  "name": "forge-tweaks",
+  "name": "bright-tweaks",
   "version": "1.0.0",
   "description": "",
-  "main": "index.php",
+  "main": "index.js",
   "scripts": {
+    "run": "nodemon -e scss -x \"npm run build\"",
+    "build": "npm run build:dashboard && npm run build:wp-login",
+    "build:dashboard": "node-sass --output-style compressed assets/scss/dashboard.scss > assets/css/dashboard.css",
+    "build:wp-login": "node-sass --output-style compressed assets/scss/wp-login.scss > assets/css/wp-login.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://sd-forge@bitbucket.org/forgecollective/forge-tweaks.git"
+    "url": "git+https://github.com/brightagency/forge-tweaks.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/forgecollective/forge-tweaks#readme",
+  "bugs": {
+    "url": "https://github.com/brightagency/forge-tweaks/issues"
+  },
+  "homepage": "https://github.com/brightagency/forge-tweaks#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1",
-    "gulp-uglify": "^1.5.3"
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.17.3"
   }
 }
