@@ -27,7 +27,7 @@ function change_dashboard_footer_text() {
 add_filter('admin_footer_text', 'change_dashboard_footer_text');
 
 function insert_login_css() {
-	echo '<link rel="stylesheet" type="text/css" href="' . plugin_dir_url( __FILE__ ) . './assets/css/wp-login.css">';
+	echo '<link rel="stylesheet" type="text/css" href="' . plugin_dir_url( __FILE__ ) . './assets/css/wp-login.css?v=2">';
 }
  
 add_action('login_head', 'insert_login_css');
