@@ -38,9 +38,12 @@ body {
 	width: 225px;
 	height: 50px;
 	margin-bottom: 24px;
+	padding-right: 1rem;
+	padding-left: 1rem;
 	background-image: url('../images/logo.svg');
 	background-position: center;
 	background-size: contain;
+	box-sizing: border-box;
 }
 
 p.message {
